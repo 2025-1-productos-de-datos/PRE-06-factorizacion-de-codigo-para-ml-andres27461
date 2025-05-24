@@ -1,3 +1,4 @@
+# save_model.py
 import os
 import pickle
 
@@ -8,3 +9,4 @@ def save_model(model, save_path="models/estimator.pkl"):
         os.makedirs("models")
     with open(save_path, "wb") as file:
         pickle.dump(model, file)
+        
